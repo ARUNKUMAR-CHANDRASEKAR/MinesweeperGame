@@ -25,6 +25,6 @@
 	- Each have 5 simple test cases.
 
 
-Sample Output:
+ Sample Output:
 
 <img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/05c86548-7749-46da-ae6c-38555bb5b736" />
