@@ -35,11 +35,11 @@ com.example.sudoku
 
 ## Tech Stack
 
-* Java 17+
-* Spring Boot 3.x
+* Java 25
+* Spring Boot 4.0.6
 * JUnit 5
 * Mockito
-* Maven / Gradle
+* Maven 
 
 ---
 
