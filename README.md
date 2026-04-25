@@ -28,7 +28,7 @@ com.example.sudoku
 ├── service          → Business logic (validation, generation)
 ├── model            → Data structures (Board, Cell)
 ├── view             → Console output
-└── SudokuApplication → Entry point
+└── MineSweeperAppApplication → Entry point
 ```
 
 ---
@@ -48,7 +48,7 @@ com.example.sudoku
 ### Using IntelliJ
 
 1. Open the project
-2. Run `SudokuApplication.java`
+2. Run `MineSweeperAppApplication.java`
 
 ### Using Terminal
 
