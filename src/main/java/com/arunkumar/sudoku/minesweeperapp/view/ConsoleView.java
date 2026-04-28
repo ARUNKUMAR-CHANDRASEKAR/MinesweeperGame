@@ -1,6 +1,6 @@
-package com.example.sudoku.minesweeperapp.view;
+package com.arunkumar.sudoku.minesweeperapp.view;
 
-import com.example.sudoku.minesweeperapp.model.SudokuBoard;
+import com.arunkumar.sudoku.minesweeperapp.model.SudokuBoard;
 import org.springframework.stereotype.Component;
 
 @Component

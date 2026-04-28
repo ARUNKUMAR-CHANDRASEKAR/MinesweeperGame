@@ -1,4 +1,4 @@
-package com.example.sudoku.minesweeperapp.model;
+package com.arunkumar.sudoku.minesweeperapp.model;
 
 public class Cell {
     private int value;

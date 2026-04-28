@@ -1,8 +1,8 @@
-package com.example.sudoku.minesweeperapp.controller;
+package com.arunkumar.sudoku.minesweeperapp.controller;
 
-import com.example.sudoku.minesweeperapp.model.SudokuBoard;
-import com.example.sudoku.minesweeperapp.service.SudokuService;
-import com.example.sudoku.minesweeperapp.view.ConsoleView;
+import com.arunkumar.sudoku.minesweeperapp.model.SudokuBoard;
+import com.arunkumar.sudoku.minesweeperapp.service.SudokuService;
+import com.arunkumar.sudoku.minesweeperapp.view.ConsoleView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

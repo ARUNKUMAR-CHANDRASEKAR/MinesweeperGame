@@ -1,9 +1,9 @@
-package com.example.sudoku.minesweeperapp;
+package com.arunkumar.sudoku.minesweeperapp;
 
-import com.example.sudoku.minesweeperapp.controller.GameController;
-import com.example.sudoku.minesweeperapp.model.SudokuBoard;
-import com.example.sudoku.minesweeperapp.service.SudokuService;
-import com.example.sudoku.minesweeperapp.view.ConsoleView;
+import com.arunkumar.sudoku.minesweeperapp.controller.GameController;
+import com.arunkumar.sudoku.minesweeperapp.model.SudokuBoard;
+import com.arunkumar.sudoku.minesweeperapp.service.SudokuService;
+import com.arunkumar.sudoku.minesweeperapp.view.ConsoleView;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

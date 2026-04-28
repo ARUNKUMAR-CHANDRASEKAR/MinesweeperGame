@@ -1,6 +1,6 @@
-package com.example.sudoku.minesweeperapp;
+package com.arunkumar.sudoku.minesweeperapp;
 
-import com.example.sudoku.minesweeperapp.controller.GameController;
+import com.arunkumar.sudoku.minesweeperapp.controller.GameController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

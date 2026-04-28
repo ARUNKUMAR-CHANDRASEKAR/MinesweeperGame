@@ -1,6 +1,6 @@
-package com.example.sudoku.minesweeperapp.service;
+package com.arunkumar.sudoku.minesweeperapp.service;
 
-import com.example.sudoku.minesweeperapp.model.SudokuBoard;
+import com.arunkumar.sudoku.minesweeperapp.model.SudokuBoard;
 import org.springframework.stereotype.Service;
 
 
