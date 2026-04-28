@@ -89,19 +89,15 @@ class GameControllerTest {
     @Test
     void shouldStartGameAndExitOnQuit() {
 
-        // Arrange
         int[][] puzzle = new int[9][9];
         SudokuBoard board = new SudokuBoard(puzzle);
 
         when(service.generatePuzzle()).thenReturn(board);
 
-        // Simulate user input: quit immediately
         Scanner scanner = new Scanner("quit\n");
 
-        // Act
         controller.startGame(scanner);
 
-        // Assert
         verify(view).printWelcome();
         verify(view,
                 atLeastOnce()).printBoard(board);

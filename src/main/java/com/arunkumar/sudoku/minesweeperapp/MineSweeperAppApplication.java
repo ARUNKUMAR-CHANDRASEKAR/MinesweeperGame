@@ -21,7 +21,7 @@ public class MineSweeperAppApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Scanner scanner = new Scanner("quit\n");
+        Scanner scanner = new Scanner(System.in);
         gameController.startGame(scanner);
     }
 }

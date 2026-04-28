@@ -22,14 +22,13 @@ public class GameController {
         SudokuBoard board = service.generatePuzzle();
 
         view.printWelcome();
+        System.out.println("Here is your puzzle:");
         view.printBoard(board);
 
         while (true) {
 
-            // ALWAYS print board first
             view.printBoard(board);
 
-            // ALWAYS print prompt after board
             System.out.print("\nEnter command (e.g., A3 4, C5 clear, hint, check, quit): ");
 
             String input = scanner.nextLine().trim();
@@ -50,7 +49,8 @@ public class GameController {
                 continue;
             }
 
-            handleMove(board, input);
+            String result = handleMove(board, input);
+            System.out.println(result);
 
             if (service.isComplete(board)) {
                 view.printBoard(board);
@@ -73,31 +73,30 @@ public class GameController {
             int row = pos.charAt(0) - 'A';
             int col = Integer.parseInt(pos.substring(1)) - 1;
 
-            // ✅ Check bounds
             if (row < 0 || row > 8 || col < 0 || col > 8) {
                 return "Invalid position.";
             }
 
-            // ✅ Check prefilled FIRST
             if (board.getCell(row, col).isPrefilled()) {
-                return "Invalid move. Pre-filled cell.";
+                return "Invalid move. " + pos + " is pre-filled.";
             }
 
-            // ✅ CLEAR
             if (parts[1].equalsIgnoreCase("clear")) {
                 board.getCell(row, col).setValue(0);
                 return "Cell cleared.";
             }
 
-            // ✅ Parse number
             int num = Integer.parseInt(parts[1]);
 
             if (num < 1 || num > 9) {
                 return "Invalid number. Must be 1–9.";
             }
 
-            board.getCell(row, col).setValue(num);
+            if (!service.isValidMove(board, row, col, num)) {
+                return "Invalid move. Violates Sudoku rules.";
+            }
 
+            board.getCell(row, col).setValue(num);
             return "Move accepted.";
 
         } catch (Exception e) {
