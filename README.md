@@ -148,14 +148,7 @@ or
 * Save/load game state
 * Leaderboard
 
----
 
-## Interview Talking Points
-
-* Why MVC? → Separation of concerns
-* Why Spring Boot? → DI, scalability, testability
-* Why Streams? → Cleaner validation logic
-* TDD approach → Writing testable and maintainable code
 
 ---
 
